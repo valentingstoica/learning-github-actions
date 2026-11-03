@@ -3,8 +3,9 @@ name: Vali is awesome
 on: workflow_dispatch
 
 jobs:
-    first_job:
+    salute_world:
+        name: Salute world
         runs-on: ubuntu-latest
         steps:
-            - name: First step
+            - name: Salute world
               run: echo "Hello world!"
