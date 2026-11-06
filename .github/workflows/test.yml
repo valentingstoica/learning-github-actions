@@ -1,11 +1,17 @@
 name: Vali is awesome
 
-on: workflow_dispatch
+on: [workflow_dispatch, pull_request]
 
 jobs:
-    salute_world:
-        name: Salute world
+    job1:
+        name: Job 1
         runs-on: ubuntu-latest
         steps:
-            - name: Salute world
-              run: echo "Hello world!"
+            - name: Step 1
+              run: echo "Step 1"
+    job2:
+        name: Job 2
+        runs-on: ubuntu-latest
+        steps:
+            - name: Step 2
+              run: echo "Step 2"
